@@ -1,76 +1,34 @@
 ---
-title: "Christine Park"
-pagetitle: "Christine Park — Researcher, builder, and writer"
-description: "Christine Park's research, publications, and writing."
+pagetitle: "Christine Park"
+description: "About Christine Park and her research."
 toc: false
 page-layout: full
 ---
 
-::: {.hero}
-::: {.hero-copy}
-<p class="eyebrow">RESEARCHER · BUILDER · WRITER</p>
-
-# I work on questions that matter.
-
-I’m Christine Park. I study **[your research area]**, with a focus on **[the problem or impact you care about]**.
-
-[Learn about my work](about.qmd){.btn .btn-primary} [View publications](publications.qmd){.btn .btn-outline-primary}
-:::
-
-::: {.hero-mark aria-label="CP monogram"}
+::: {.intro}
+::: {.portrait-placeholder aria-label="Placeholder for a portrait of Christine Park"}
 CP
 :::
-:::
 
-::: {.home-section}
-## What I do
+::: {.intro-copy}
+## Hi, I’m Christine.
 
-::: {.feature-grid}
-::: {.feature-card}
-### Research
+I’m a **[role]** at **[institution]**, where I work on **[research area]**. My research asks **[one clear, compelling question]**.
 
-Describe the central question behind your work in two or three plain-language sentences. Focus on why it matters, not only the methods you use.
-:::
-
-::: {.feature-card}
-### Publications
-
-Share peer-reviewed papers, preprints, talks, datasets, and software. Keep the canonical citation and useful links together.
-
-[Browse publications →](publications.qmd)
-:::
-
-::: {.feature-card}
-### Writing
-
-Notes on research, tools, lessons learned, and ideas still in progress.
-
-[Read the blog →](blog.qmd)
-:::
+I’m especially interested in **[topic one]**, **[topic two]**, and **[topic three]**. Across these projects, I aim to **[the broader contribution or real-world outcome]**.
 :::
 :::
 
-::: {.home-section .section-tint}
-## Selected work
+Before this, I **[one or two relevant background details]**. Outside of work, you can find me **[human detail or hobby]**.
 
-Replace these examples with two or three projects that best represent where your work is going.
+You can browse my [publications](publications.qmd) and [writing](blog.qmd). Add your preferred public email address and professional profiles here when you are ready.
 
-1. **[Project or paper title]** — One sentence on the question, result, and why it matters. [Paper](publications.qmd) · [Code](https://github.com/sparkcpark)
-2. **[Project or paper title]** — One sentence that a researcher outside your specialty can understand. [Paper](publications.qmd)
-3. **[Project or paper title]** — A concise description of the contribution. [Project page](about.qmd)
-:::
+## Research interests
 
-::: {.home-section}
-## Latest writing
+- **[Research theme]** — A sentence explaining the kinds of questions you ask.
+- **[Research theme]** — A sentence connecting the theme to your larger agenda.
+- **[Research theme]** — A sentence describing the methods or application area.
 
-::: {#latest-posts}
-:::
-:::
+## Now
 
-```{=html}
-<script>
-// The blog listing remains the source of truth; this link keeps the homepage light.
-document.getElementById("latest-posts").innerHTML =
-  '<p>Your published posts will appear in the <a href="blog.html">blog archive</a>. A starter draft is ready in <code>posts/welcome/</code>.</p>';
-</script>
-```
+I’m currently **[what you are working on, learning, or looking for]**.

@@ -12,33 +12,24 @@ website:
   favicon: assets/favicon.svg
   open-graph: true
   twitter-card: true
-  search: true
+  search: false
   navbar:
     pinned: true
     left:
       - text: About
-        href: about.qmd
+        href: index.qmd
       - text: Publications
         href: publications.qmd
       - text: Blog
         href: blog.qmd
-    right:
-      - icon: github
-        href: "https://github.com/sparkcpark"
-        aria-label: GitHub
   page-footer:
     left: "© 2026 Christine Park"
-    right:
-      - text: RSS
-        href: blog.xml
-      - text: Built with Quarto
-        href: https://quarto.org/
 
 format:
   html:
-    theme: cosmo
+    theme: flatly
     css: styles.css
-    toc: true
+    toc: false
     smooth-scroll: true
     link-external-newwindow: true
     anchor-sections: true

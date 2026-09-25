@@ -14,7 +14,7 @@ quarto preview
 
 Search the project for `YOUR_`, `[your`, and `[Your` placeholders. At minimum:
 
-- Update the biography and research summary in `index.qmd` and `about.qmd`.
+- Update the biography and research summary in `index.qmd`.
 - Replace the example in `publications.bib` with real BibTeX entries.
 - Add `assets/christine-park-cv.pdf`, or remove the CV link.
 - Replace the GitHub, LinkedIn, and email links in `_quarto.yml`.

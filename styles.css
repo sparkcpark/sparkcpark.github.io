@@ -1,188 +1,144 @@
 :root {
-  --ink: #23312f;
-  --muted: #65716e;
-  --paper: #fbfaf7;
-  --cream: #f3efe5;
-  --green: #176b5b;
-  --green-dark: #104a40;
-  --gold: #c9913c;
-  --line: #dce2de;
+  --ink: #252525;
+  --muted: #666;
+  --link: #2867a8;
+  --line: #e6e6e6;
+  --paper: #fff;
 }
-
 body {
   background: var(--paper);
   color: var(--ink);
-  font-family: "Avenir Next", "Inter", system-ui, -apple-system, sans-serif;
-  letter-spacing: 0.005em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 16px;
 }
 
 .navbar {
-  border-bottom: 1px solid rgba(35, 49, 47, 0.1);
-  background: rgba(251, 250, 247, 0.94);
-  backdrop-filter: blur(12px);
+  min-height: 58px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: none;
 }
 
 .navbar-brand {
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  font-size: 1.35rem;
-  font-weight: 700;
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: var(--ink);
+}
+
+#quarto-content {
+  padding-top: 2rem;
+}
+
+main.content {
+  max-width: 780px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
 }
 
 h1, h2, h3 {
   color: var(--ink);
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  letter-spacing: -0.025em;
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+h2 {
+  margin-top: 2.6rem;
+  font-size: 1.35rem;
 }
 
 p, li {
-  line-height: 1.75;
+  line-height: 1.7;
 }
 
-.hero {
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+.intro {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(14rem, 0.55fr);
-  gap: clamp(3rem, 8vw, 8rem);
-  align-items: center;
-  min-height: 68vh;
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: clamp(5rem, 10vw, 9rem) 2rem;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  margin: 1.5rem 0 2.25rem;
 }
 
-.hero h1 {
-  max-width: 790px;
-  margin: 0.4rem 0 1.4rem;
-  font-size: clamp(3.2rem, 7vw, 6.5rem);
-  line-height: 0.98;
-}
-
-.hero p:not(.eyebrow) {
-  max-width: 680px;
-  color: var(--muted);
-  font-size: 1.2rem;
-}
-
-.eyebrow {
-  color: var(--green);
-  font-size: 0.8rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-}
-
-.hero-mark, .about-mark {
+.portrait-placeholder {
   display: grid;
   place-items: center;
+  width: 150px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: var(--green);
-  color: var(--paper);
-  box-shadow: 24px 24px 0 var(--cream);
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
-  font-size: clamp(3rem, 8vw, 6rem);
-  font-weight: 700;
+  background: #eceff1;
+  color: #68737a;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-.btn {
-  margin: 0.5rem 0.45rem 0.5rem 0;
-  border-radius: 999px;
-  padding: 0.65rem 1.15rem;
-  font-weight: 700;
-}
-
-.btn-primary {
-  background: var(--green);
-  border-color: var(--green);
-}
-
-.btn-primary:hover {
-  background: var(--green-dark);
-  border-color: var(--green-dark);
-}
-
-.home-section {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 5rem 2rem;
-}
-
-.home-section > h2 {
-  margin-bottom: 2rem;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-}
-
-.section-tint {
-  max-width: none;
-  padding-right: max(2rem, calc((100vw - 1180px) / 2 + 2rem));
-  padding-left: max(2rem, calc((100vw - 1180px) / 2 + 2rem));
-  background: var(--cream);
-}
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-}
-
-.feature-card {
-  min-height: 240px;
-  padding: 1.8rem;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  background: #fff;
-}
-
-.feature-card h3 {
+.intro-copy h2 {
+  margin: 0 0 0.8rem;
   font-size: 1.55rem;
 }
 
-.about-layout {
-  display: grid;
-  grid-template-columns: minmax(12rem, 0.7fr) minmax(0, 1.3fr);
-  gap: clamp(2.5rem, 7vw, 6rem);
-  align-items: start;
-  margin: 3rem 0 5rem;
-}
-
-.about-copy h2 {
-  margin-top: 0;
-  font-size: clamp(2.3rem, 5vw, 4rem);
+.intro-copy p:last-child {
+  margin-bottom: 0;
 }
 
 .publication-callout {
-  margin: 1.5rem 0 3rem;
-  padding: 1.5rem 1.6rem;
-  border-left: 4px solid var(--gold);
-  background: var(--cream);
+  margin: 1.25rem 0 2.5rem;
+  padding: 1rem 1.2rem;
+  border-left: 3px solid var(--line);
+  background: #fafafa;
 }
 
 #refs .csl-entry {
-  margin-bottom: 1.2rem;
-  padding-bottom: 1.2rem;
+  margin-bottom: 1.1rem;
+  padding-bottom: 1.1rem;
   border-bottom: 1px solid var(--line);
 }
 
-@media (max-width: 800px) {
-  .hero, .about-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .hero {
-    min-height: auto;
-    padding-top: 4rem;
-  }
-
-  .hero-mark, .about-mark {
-    width: min(70vw, 260px);
-  }
-
-  .feature-grid {
-    grid-template-columns: 1fr;
-  }
+.quarto-listing-default .listing-item {
+  padding: 1.2rem 0;
+  border-bottom-color: var(--line);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    scroll-behavior: auto !important;
-    transition: none !important;
+.page-footer {
+  margin-top: 4rem;
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  #quarto-content {
+    padding-top: 1rem;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .portrait-placeholder {
+    width: 120px;
   }
 }
