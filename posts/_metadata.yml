@@ -1,4 +1,7 @@
 author: "Christine Park"
 freeze: true
 title-block-banner: false
+body-classes: blog-post
 
+filters:
+  - ../filters/title-break.lua

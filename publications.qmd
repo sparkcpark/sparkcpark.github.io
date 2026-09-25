@@ -1,22 +1,21 @@
 ---
 title: "Publications"
-description: "Publications and scholarly work by Christine Park."
 nocite: |
   @*
 bibliography: publications.bib
+csl: publications-descending.csl
+filters:
+  - path: filters/highlight-name.lua
+    at: post-render
 toc: false
 ---
 
-This page is generated from `publications.bib`. Add a BibTeX entry there and it will appear automatically after the next render.
-
 ## Selected publications
 
-For your most important work, consider adding a short plain-language summary above the complete bibliography, along with links to the paper, code, data, or press coverage.
-
 ::: {.publication-callout}
-**[Selected paper title]**  
-Your one-sentence explanation of the main finding and why it matters.  
-[Paper](https://doi.org/) · [Code](https://github.com/sparkcpark) · [Project page](#)
+[**Synthetic Hospital: An Open, Verifiable, Physician-Validated Longitudinal EHR Benchmark**]{.callout-title}\
+[**Park C**]{.underline}, Chen V, Dettmers T. arXiv, 2026.\
+[Paper](https://arxiv.org/pdf/2609.30027) · [Code](https://github.com/sparkcpark/synthetic_hospital)
 :::
 
 ## All publications

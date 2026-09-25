@@ -1,14 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 :root {
   --ink: #252525;
   --muted: #666;
   --link: #2867a8;
   --line: #e6e6e6;
   --paper: #fff;
+  --site-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --bs-body-font-family: var(--site-font);
 }
 body {
   background: var(--paper);
   color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: var(--site-font);
   font-size: 16px;
 }
 
@@ -17,6 +21,13 @@ body {
   border-bottom: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.96);
   box-shadow: none;
+}
+
+.navbar,
+.page-footer,
+button,
+input {
+  font-family: var(--site-font);
 }
 
 .navbar-brand {
@@ -49,7 +60,7 @@ main.content {
 
 h1, h2, h3 {
   color: var(--ink);
-  font-family: inherit;
+  font-family: var(--site-font);
   font-weight: 600;
   letter-spacing: -0.015em;
 }
@@ -81,16 +92,12 @@ a:hover {
   margin: 1.5rem 0 2.25rem;
 }
 
-.portrait-placeholder {
-  display: grid;
-  place-items: center;
+.portrait {
+  display: block;
   width: 150px;
   aspect-ratio: 1;
+  object-fit: cover;
   border-radius: 50%;
-  background: #eceff1;
-  color: #68737a;
-  font-size: 2rem;
-  font-weight: 600;
 }
 
 .intro-copy h2 {
@@ -102,11 +109,36 @@ a:hover {
   margin-bottom: 0;
 }
 
+.school {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.school .emblem {
+  display: inline-block;
+  height: 1.15em;
+  width: auto;
+  vertical-align: -0.2em;
+}
+
+.school.stanford { color: #b1040e; }
+.school.dartmouth { color: #00693e; }
+.school.duke { color: #00539b; }
+.school.cmu { color: #7a1020; }
+.school.uw { color: #4b2e83; }
+
 .publication-callout {
   margin: 1.25rem 0 2.5rem;
   padding: 1rem 1.2rem;
   border-left: 3px solid var(--line);
   background: #fafafa;
+  container-type: inline-size;
+}
+
+/* Keep the selected paper's title on one line by scaling it to the box width. */
+.publication-callout .callout-title {
+  white-space: nowrap;
+  font-size: min(1rem, 2.2cqi);
 }
 
 #refs .csl-entry {
@@ -118,6 +150,34 @@ a:hover {
 .quarto-listing-default .listing-item {
   padding: 1.2rem 0;
   border-bottom-color: var(--line);
+}
+
+.blog-post #title-block-header h1.title {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.post-list {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.post-row {
+  margin-bottom: 1.1rem;
+  line-height: 1.5;
+}
+
+.post-row .post-title {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.post-row .post-title:hover {
+  color: var(--link);
+}
+
+.post-row .post-meta {
+  color: var(--muted);
 }
 
 .page-footer {
@@ -138,7 +198,12 @@ a:hover {
     gap: 1.25rem;
   }
 
-  .portrait-placeholder {
+  .publication-callout .callout-title {
+    white-space: normal;
+    font-size: 1rem;
+  }
+
+  .portrait {
     width: 120px;
   }
 }

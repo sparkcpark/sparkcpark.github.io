@@ -1,18 +1,17 @@
 ---
 title: "Writing"
-description: "Notes on research, tools, and ideas from Christine Park."
 listing:
   contents: posts
   sort: "date desc"
-  type: default
+  template: posts-list.ejs
+  date-format: "YYYY-MM-DD"
+  fields: [title, date, description, categories]
   categories: true
   sort-ui: false
-  filter-ui: true
+  filter-ui: false
   feed:
     title: "Christine Park — Writing"
 page-layout: article
 toc: false
 ---
-
-Notes on research, tools, lessons learned, and ideas in progress.
 

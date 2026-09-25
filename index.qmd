@@ -6,29 +6,21 @@ page-layout: full
 ---
 
 ::: {.intro}
-::: {.portrait-placeholder aria-label="Placeholder for a portrait of Christine Park"}
-CP
-:::
+![](assets/profile.jpg){.portrait fig-alt="Portrait of Christine Park"}
 
 ::: {.intro-copy}
-## Hi, I’m Christine.
 
-I’m a **[role]** at **[institution]**, where I work on **[research area]**. My research asks **[one clear, compelling question]**.
+Hello! I'm Christine Park and I’m a first year PhD student at [![](assets/emblems/stanford.png){.emblem aria-hidden="true"} Stanford University]{.school .stanford} studying computer science where I work on reliable and verifiable clinical AI. I'm very fortunate to be advised by Profs [Yejin Choi](https://yejinc.github.io/) and [Curtis Langlotz](https://profiles.stanford.edu/curtis-langlotz). 
 
-I’m especially interested in **[topic one]**, **[topic two]**, and **[topic three]**. Across these projects, I aim to **[the broader contribution or real-world outcome]**.
+My research asks: How can we train clinical AI systems to reason faithfully, revise their beliefs as evidence changes, and recognize when to defer to a human expert?
+
+I’m especially interested in process-level and compositional rewards for clinical reasoning, temporal belief revision, and calibrated abstention and escalation. Across these projects, I aim to develop safer, more trustworthy clinical AI systems whose reasoning can be evaluated and improved.
+
+Previously, I obtained my BA in chemistry at [![](assets/emblems/dartmouth.png){.emblem aria-hidden="true"} Dartmouth College]{.school .dartmouth}, advised by Prof [Glenn Micalizio](https://pharmsci.uci.edu/faculty/glenn-micalizio/). I received my MD and MEng in AI from [![](assets/emblems/duke.png){.emblem aria-hidden="true"} Duke University]{.school .duke}. I trained in neurosurgery at the [![](assets/emblems/uw.png){.emblem aria-hidden="true"} University of Washington]{.school .uw}. I worked as a visiting scholar at [![](assets/emblems/cmu.png){.emblem aria-hidden="true"} Carnegie Mellon University]{.school .cmu} advised by Prof [Tim Dettmers](https://csd.cmu.edu/people/faculty/tim-dettmers).
+
+You can browse my [publications](publications.qmd) and [writing](blog.qmd)!
+
+Feel free to reach out via [email](mailto:lechrisp@stanford.edu), [Twitter](https://x.com/sparkcpark/all) or [LinkedIn](https://www.linkedin.com/in/christine-park-642011230/)! 
+
 :::
 :::
-
-Before this, I **[one or two relevant background details]**. Outside of work, you can find me **[human detail or hobby]**.
-
-You can browse my [publications](publications.qmd) and [writing](blog.qmd). Add your preferred public email address and professional profiles here when you are ready.
-
-## Research interests
-
-- **[Research theme]** — A sentence explaining the kinds of questions you ask.
-- **[Research theme]** — A sentence connecting the theme to your larger agenda.
-- **[Research theme]** — A sentence describing the methods or application area.
-
-## Now
-
-I’m currently **[what you are working on, learning, or looking for]**.
