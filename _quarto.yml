@@ -1,6 +1,7 @@
 project:
   type: website
   output-dir: _site
+  post-render: scripts/clean-urls.py
   resources:
     - assets/**
     - google3061026915a95eac.html
@@ -31,6 +32,7 @@ format:
     theme: flatly
     css: styles.css
     include-in-header: includes/umami.html
+    canonical-url: true
     toc: false
     smooth-scroll: true
     link-external-newwindow: true
