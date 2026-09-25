@@ -3,6 +3,7 @@ project:
   output-dir: _site
   resources:
     - assets/**
+    - google3061026915a95eac.html
 
 website:
   title: "Christine Park"
