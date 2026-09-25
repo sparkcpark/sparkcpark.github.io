@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - assets/**
+
+website:
+  title: "Christine Park"
+  # Replace this before launch so RSS, the sitemap, and social cards use your URL.
+  site-url: "https://sparkcpark.github.io"
+  description: "The personal website of Christine Park: research, publications, and writing."
+  favicon: assets/favicon.svg
+  open-graph: true
+  twitter-card: true
+  search: true
+  navbar:
+    pinned: true
+    left:
+      - text: About
+        href: about.qmd
+      - text: Publications
+        href: publications.qmd
+      - text: Blog
+        href: blog.qmd
+    right:
+      - icon: github
+        href: "https://github.com/sparkcpark"
+        aria-label: GitHub
+  page-footer:
+    left: "© 2026 Christine Park"
+    right:
+      - text: RSS
+        href: blog.xml
+      - text: Built with Quarto
+        href: https://quarto.org/
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    smooth-scroll: true
+    link-external-newwindow: true
+    anchor-sections: true
+
+execute:
+  freeze: auto

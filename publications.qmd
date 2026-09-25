@@ -1,0 +1,25 @@
+---
+title: "Publications"
+description: "Publications and scholarly work by Christine Park."
+nocite: |
+  @*
+bibliography: publications.bib
+toc: false
+---
+
+This page is generated from `publications.bib`. Add a BibTeX entry there and it will appear automatically after the next render.
+
+## Selected publications
+
+For your most important work, consider adding a short plain-language summary above the complete bibliography, along with links to the paper, code, data, or press coverage.
+
+::: {.publication-callout}
+**[Selected paper title]**  
+Your one-sentence explanation of the main finding and why it matters.  
+[Paper](https://doi.org/) · [Code](https://github.com/sparkcpark) · [Project page](#)
+:::
+
+## All publications
+
+::: {#refs}
+:::

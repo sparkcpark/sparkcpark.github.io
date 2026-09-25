@@ -1,0 +1,76 @@
+---
+title: "Christine Park"
+pagetitle: "Christine Park — Researcher, builder, and writer"
+description: "Christine Park's research, publications, and writing."
+toc: false
+page-layout: full
+---
+
+::: {.hero}
+::: {.hero-copy}
+<p class="eyebrow">RESEARCHER · BUILDER · WRITER</p>
+
+# I work on questions that matter.
+
+I’m Christine Park. I study **[your research area]**, with a focus on **[the problem or impact you care about]**.
+
+[Learn about my work](about.qmd){.btn .btn-primary} [View publications](publications.qmd){.btn .btn-outline-primary}
+:::
+
+::: {.hero-mark aria-label="CP monogram"}
+CP
+:::
+:::
+
+::: {.home-section}
+## What I do
+
+::: {.feature-grid}
+::: {.feature-card}
+### Research
+
+Describe the central question behind your work in two or three plain-language sentences. Focus on why it matters, not only the methods you use.
+:::
+
+::: {.feature-card}
+### Publications
+
+Share peer-reviewed papers, preprints, talks, datasets, and software. Keep the canonical citation and useful links together.
+
+[Browse publications →](publications.qmd)
+:::
+
+::: {.feature-card}
+### Writing
+
+Notes on research, tools, lessons learned, and ideas still in progress.
+
+[Read the blog →](blog.qmd)
+:::
+:::
+:::
+
+::: {.home-section .section-tint}
+## Selected work
+
+Replace these examples with two or three projects that best represent where your work is going.
+
+1. **[Project or paper title]** — One sentence on the question, result, and why it matters. [Paper](publications.qmd) · [Code](https://github.com/sparkcpark)
+2. **[Project or paper title]** — One sentence that a researcher outside your specialty can understand. [Paper](publications.qmd)
+3. **[Project or paper title]** — A concise description of the contribution. [Project page](about.qmd)
+:::
+
+::: {.home-section}
+## Latest writing
+
+::: {#latest-posts}
+:::
+:::
+
+```{=html}
+<script>
+// The blog listing remains the source of truth; this link keeps the homepage light.
+document.getElementById("latest-posts").innerHTML =
+  '<p>Your published posts will appear in the <a href="blog.html">blog archive</a>. A starter draft is ready in <code>posts/welcome/</code>.</p>';
+</script>
+```

@@ -1,0 +1,18 @@
+---
+title: "Writing"
+description: "Notes on research, tools, and ideas from Christine Park."
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: true
+  feed:
+    title: "Christine Park — Writing"
+page-layout: article
+toc: false
+---
+
+Notes on research, tools, lessons learned, and ideas in progress.
+
